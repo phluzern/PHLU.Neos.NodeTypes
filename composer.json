@@ -1,0 +1,18 @@
+{
+    "description": "Add description here",
+    "type": "neos-package",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "name": "phlu/neos-nodetypes",
+    "autoload": {
+        "psr-0": {
+            "PHLU\\Neos\\NodeTypes": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PHLU.Neos.NodeTypes"
+        }
+    }
+}
