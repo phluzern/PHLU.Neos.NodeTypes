@@ -1,0 +1,68 @@
+# Teaser mixin
+'PHLU.Neos.NodeTypes:TeaserMixin':
+  ui:
+    inspector:
+      groups:
+        teaser:
+          label: 'Teaser'
+  properties:
+    teaserHeadline:
+      type: string
+      defaultValue: '<h1>Enter headline here</h1>'
+      ui:
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        label: 'Headline'
+        inspector:
+          group: 'teaser'
+          position: 50
+        aloha:
+          'format':
+            'p': FALSE
+            'h1': TRUE
+            'h2': TRUE
+            'h3': TRUE
+            'removeFormat': TRUE
+          'link':
+            'a': FALSE
+    teaserText:
+      type: string
+      defaultValue: ''
+      ui:
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        label: 'Text'
+        inspector:
+          group: 'teaser'
+          position: 50
+        aloha:
+          autoparagraph: TRUE
+          'format':
+            'strong': TRUE
+            'em': TRUE
+            'u': FALSE
+            'sub': FALSE
+            'sup': FALSE
+            'del': FALSE
+            'p': TRUE
+            'h1': TRUE
+            'h2': TRUE
+            'h3': TRUE
+            'pre': TRUE
+            'removeFormat': TRUE
+          'table':
+            'table': TRUE
+          'list':
+            'ol': TRUE
+            'ul': TRUE
+          'link':
+            'a': TRUE
+    teaserImage:
+      image:
+        type: TYPO3\Media\Domain\Model\ImageInterface
+        ui:
+          label: 'Bild'
+          reloadIfChanged: TRUE
+          inspector:
+            group: 'teaser'
+            position: 50

@@ -1,0 +1,5 @@
+'PHLU.Neos.NodeTypes:Page':
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': TRUE
+  abstract: TRUE
+

@@ -1,0 +1,64 @@
+# Teaser mixin
+'PHLU.Neos.NodeTypes:Event':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Content': TRUE
+    'PHLU.Neos.NodeTypes:TeaserMixin': TRUE
+  abstract: TRUE
+  ui:
+    label: 'Veranstaltung'
+    icon: 'icon-picture'
+    position: 300
+    inspector:
+      groups:
+        event:
+          label: 'Veranstaltung'
+
+  properties:
+    date:
+      type: date
+      ui:
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        label: 'Date'
+        inspector:
+          group: 'date'
+          position: 50
+    location:
+      type: string
+      defaultValue: ''
+      ui:
+        inlineEditable: TRUE
+        reloadIfChanged: TRUE
+        label: 'Ort'
+        inspector:
+          group: 'event'
+          position: 50
+
+
+
+# Events collection
+'PHLU.Neos.NodeTypes:EventsCollection':
+  superTypes:
+    'PHLU.Neos.NodeTypes:ContentCollection': TRUE
+  constraints:
+    nodeTypes:
+      '*': false
+      'PHLU.Neos.NodeTypes:Event': true
+
+
+# Events
+'PHLU.Neos.NodeTypes:Events':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Content': TRUE
+  abstract: TRUE
+  ui:
+    label: 'Veranstaltungen (Sammlung)'
+    icon: 'icon-picture'
+    position: 300
+    inspector:
+      groups:
+        event:
+          label: 'Veranstaltung'
+  childNodes:
+    main:
+      type: 'PHLU.Neos.NodeTypes:EventsCollection'
