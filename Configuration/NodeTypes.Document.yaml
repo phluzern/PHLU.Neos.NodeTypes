@@ -2,4 +2,7 @@
   superTypes:
     'TYPO3.Neos.NodeTypes:Page': TRUE
   abstract: TRUE
+  constraints:
+    nodeTypes:
+      'TYPO3.Neos.NodeTypes:Page': FALSE
 
