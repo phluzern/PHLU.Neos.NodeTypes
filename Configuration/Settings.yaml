@@ -8,3 +8,22 @@ TYPO3:
       translation:
         autoInclude:
           'PHLU.Neos.NodeTypes': ['NodeTypes/*']
+
+
+  TYPO3CR:
+    contentDimensions:
+      'language':
+        label: 'Sprache'
+        icon: 'icon-language'
+        default: 'de'
+        defaultPreset: 'de'
+        presets:
+          'all': ~
+          'de':
+            label: 'Deutsch'
+            values: ['de']
+            uriSegment: ''
+          'fr':
+            label: 'Français'
+            values: ['fr']
+            uriSegment: 'fr'
