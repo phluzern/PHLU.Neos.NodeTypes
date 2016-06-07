@@ -27,3 +27,7 @@ TYPO3:
             label: 'Français'
             values: ['fr']
             uriSegment: 'fr'
+          'it':
+            label: 'Italiano'
+            values: ['it']
+            uriSegment: 'it'
