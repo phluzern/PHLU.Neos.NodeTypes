@@ -1,3 +1,7 @@
 /**
  * Root TypoScript template for package
  */
+
+include: NodeTypes/*.ts2
+include: NodeTypes/Page/*.ts2
+include: NodeTypes/Content/*.ts2

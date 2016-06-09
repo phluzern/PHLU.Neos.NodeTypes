@@ -35,6 +35,9 @@
         inspector:
           group: 'teaser'
           position: 50
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            rows: 7
         aloha:
           autoparagraph: TRUE
           'format':
@@ -57,6 +60,7 @@
             'ul': TRUE
           'link':
             'a': TRUE
+
     teaserImage:
       image:
         type: TYPO3\Media\Domain\Model\ImageInterface
