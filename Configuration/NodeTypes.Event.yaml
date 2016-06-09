@@ -37,7 +37,7 @@
 
 
 # Events collection
-'PHLU.Neos.NodeTypes:EventsCollection':
+'PHLU.Neos.NodeTypes:ContentCollection.Events':
   superTypes:
     'PHLU.Neos.NodeTypes:ContentCollection': TRUE
   constraints:
@@ -61,4 +61,4 @@
           label: 'Veranstaltung'
   childNodes:
     main:
-      type: 'PHLU.Neos.NodeTypes:EventsCollection'
+      type: 'PHLU.Neos.NodeTypes:ContentCollection.Events'
