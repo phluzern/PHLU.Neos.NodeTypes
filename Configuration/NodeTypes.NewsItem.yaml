@@ -1,0 +1,14 @@
+# News Item
+'PHLU.Neos.NodeTypes:NewsItem':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Content': TRUE
+    'PHLU.Neos.NodeTypes:TeaserMixin': TRUE
+  abstract: TRUE
+  ui:
+    label: 'News'
+    icon: 'icon-picture'
+    position: 300
+    inspector:
+      groups:
+        news:
+          label: 'News'

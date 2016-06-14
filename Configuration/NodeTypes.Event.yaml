@@ -25,7 +25,7 @@
           position: 50
     location:
       type: string
-      defaultValue: ''
+      defaultValue: 'Ort'
       ui:
         inlineEditable: TRUE
         reloadIfChanged: TRUE
@@ -33,7 +33,6 @@
         inspector:
           group: 'event'
           position: 50
-
 
 
 # Events collection
@@ -44,7 +43,6 @@
     nodeTypes:
       '*': false
       'PHLU.Neos.NodeTypes:Event': true
-
 
 # Events
 'PHLU.Neos.NodeTypes:Events':

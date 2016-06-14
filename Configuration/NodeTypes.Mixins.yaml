@@ -8,10 +8,10 @@
   properties:
     teaserHeadline:
       type: string
-      defaultValue: '<h1>Enter headline here</h1>'
+      defaultValue: 'Enter headline here'
       ui:
         inlineEditable: TRUE
-        reloadIfChanged: TRUE
+        reloadIfChanged: FALSE
         label: 'Headline'
         inspector:
           group: 'teaser'
@@ -30,7 +30,7 @@
       defaultValue: ''
       ui:
         inlineEditable: TRUE
-        reloadIfChanged: TRUE
+        reloadIfChanged: FALSE
         label: 'Text'
         inspector:
           group: 'teaser'
@@ -60,13 +60,36 @@
             'ul': TRUE
           'link':
             'a': TRUE
-
     teaserImage:
-      image:
-        type: TYPO3\Media\Domain\Model\ImageInterface
-        ui:
-          label: 'Bild'
-          reloadIfChanged: TRUE
-          inspector:
-            group: 'teaser'
-            position: 50
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Bild'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'teaser'
+          position: 50
+
+
+
+
+# Filter tags mixin
+'PHLU.Neos.NodeTypes:TagMixin':
+  ui:
+    inspector:
+      groups:
+        tags:
+          label: 'Tags'
+  properties:
+    tags:
+      type: array
+      ui:
+        label: 'Tags'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'tags'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+           placeholder: 'Tags auswählen'
+           dataSourceIdentifier: 'phlu-neos-nodetypes-tags'
+           allowEmpty: TRUE
+           multiple: true
