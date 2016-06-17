@@ -39,25 +39,35 @@ class TagsViewHelper extends AbstractViewHelper
 
     /**
      * @param Node $node
-     * @param menuItems $menuItems
+     * @param items $items
      * @param as $as
      * @return array
      */
-    public function render($node,$menuItems,$as)
+    public function render($node,$items,$as)
     {
 
-        $tagsDataSource = $this->tagsDataSource->getData($node,array());
+   
+     //   $tagsDataSource = $this->tagsDataSource->getData($node,array());
         $tags = array();
 
-        foreach ($menuItems as $item) {
+        foreach ($items as $item) {
 
-            if (is_array($item['node']->getProperty('tags'))) {
-                foreach ($item['node']->getProperty('tags') as $tag) {
-                    if (isset($tags[$tag]) === false && isset($tagsDataSource[$tag])) {
-                        $tags[$tag] = $tagsDataSource[$tag];
-                    }
-                }
+
+//            // proceed menu item
+//            if (is_array($item) && is_array($item['node']->getProperty('tags'))) {
+//                foreach ($item['node']->getProperty('tags') as $tag) {
+//                    if (isset($tags[$tag]) === false && isset($tagsDataSource[$tag])) {
+//                        $tags[$tag] = $tagsDataSource[$tag];
+//                    }
+//                }
+//            }
+
+
+            // proceed node item
+            if ($item instanceof Node) {
+                $tags[$item->getIdentifier()] = $item;
             }
+
 
 
         }
