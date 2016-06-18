@@ -40,35 +40,40 @@ class TagsViewHelper extends AbstractViewHelper
     /**
      * @param Node $node
      * @param items $items
+     * @param filterItems $filterItems show only items in filterItems list
      * @param as $as
      * @return array
      */
-    public function render($node,$items,$as)
+    public function render($node,$items,$filterItems,$as)
     {
 
-   
-     //   $tagsDataSource = $this->tagsDataSource->getData($node,array());
+
+
+        $filteredTags = array();
+
+        if (is_array($filterItems)) {
+            foreach ($filterItems as $item) {
+                // proceed menu item
+                if (is_array($item) && is_array($item['node']->getProperty('tags'))) {
+                    foreach ($item['node']->getProperty('tags') as $tag) {
+                        if (isset($tags[$tag]) === false) {
+                            $filteredTags[$tag] = $tag;
+                        }
+                    }
+                }
+            }
+        }
+
+
         $tags = array();
 
         foreach ($items as $item) {
 
-
-//            // proceed menu item
-//            if (is_array($item) && is_array($item['node']->getProperty('tags'))) {
-//                foreach ($item['node']->getProperty('tags') as $tag) {
-//                    if (isset($tags[$tag]) === false && isset($tagsDataSource[$tag])) {
-//                        $tags[$tag] = $tagsDataSource[$tag];
-//                    }
-//                }
-//            }
-
-
             // proceed node item
             if ($item instanceof Node) {
+                if (count($filteredTags) === 0 || in_array($item->getIdentifier(),$filteredTags))
                 $tags[$item->getIdentifier()] = $item;
             }
-
-
 
         }
 

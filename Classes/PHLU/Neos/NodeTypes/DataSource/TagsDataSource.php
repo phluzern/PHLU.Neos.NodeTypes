@@ -29,14 +29,15 @@ class TagsDataSource extends AbstractDataSource {
 
         $tags = array();
 
-        $flowQuery = new FlowQuery(array($node));
-        $nodes = $flowQuery->parents()->find("[instanceof PHLU.Neos.NodeTypes:Tag]");
+        $flowQuery = new FlowQuery(array($node->getParent()));
+       // $nodes = $flowQuery->parents()->find("[instanceof PHLU.Neos.NodeTypes:Tag]");
+        $nodes = $flowQuery->find("[instanceof PHLU.Neos.NodeTypes:Tag]")->get();
 
         foreach ($nodes as $tag) {
+
             $group = '';
             if ($tag->getParent() && $tag->getParent()->getProperty('title')) $group = $tag->getParent()->getProperty('title');
-
-           $tags[$group][$tag->getIdentifier()] = array('value' => $tag->getIdentifier(), 'label' => $tag->getProperty('label'), 'group' => $group, 'icon' => $tag->getProperty('icon'));
+            $tags[$group][$tag->getIdentifier()] = array('value' => $tag->getIdentifier(), 'label' => $tag->getProperty('label'), 'group' => $group, 'icon' => $tag->getProperty('icon'));
         }
 //
 //        $tags['Fächer & Schwerpunkte']['06632130-206f-4f23-ae71-052ac125e2fa'] = array('value' => '06632130-206f-4f23-ae71-052ac125e2fa', 'label' => 'Fächer', 'group' => 'Fächer & Schwerpunkte', 'icon' => 'oi oi-media-stop ');
