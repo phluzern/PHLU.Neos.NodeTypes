@@ -22,6 +22,7 @@
 # headline
 'PHLU.Neos.NodeTypes:Headline':
   superTypes:
+    'PHLU.Neos.NodeTypes:Content': TRUE
     'PHLU.Neos.NodeTypes:PlainTextMixin': TRUE
   abstract: TRUE
   ui:
