@@ -8,9 +8,33 @@
   superTypes:
     'TYPO3.Neos:ContentCollection': TRUE
   abstract: TRUE
+  constraints:
+    nodeTypes:
+      'PHLU.Neos.NodeTypes:Content': FALSE
 
 
 'TYPO3.Neos:ContentCollection':
   constraints:
     nodeTypes:
       'PHLU.Neos.NodeTypes:Content': FALSE
+
+
+# headline
+'PHLU.Neos.NodeTypes:Headline':
+  abstract: TRUE
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Headline': TRUE
+
+# Text default
+'PHLU.Neos.NodeTypes:Text':
+  abstract: TRUE
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Text': TRUE
+
+# Text with image
+'PHLU.Neos.NodeTypes:TextWithImage':
+  abstract: TRUE
+  superTypes:
+    'TYPO3.Neos.NodeTypes:TextWithImage': TRUE
+
+
