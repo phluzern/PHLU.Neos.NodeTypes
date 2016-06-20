@@ -21,20 +21,30 @@
 
 # headline
 'PHLU.Neos.NodeTypes:Headline':
-  abstract: TRUE
   superTypes:
-    'TYPO3.Neos.NodeTypes:Headline': TRUE
+    'PHLU.Neos.NodeTypes:PlainTextMixin': TRUE
+  abstract: TRUE
+  ui:
+    label: 'Titel'
+    icon: icon-header
+  properties:
+    text:
+      defaultValue: 'Titel eingeben'
+
 
 # Text default
-'PHLU.Neos.NodeTypes:Text':
+'PHLU.Neos.NodeTypes:TextPlain':
   abstract: TRUE
   superTypes:
-    'TYPO3.Neos.NodeTypes:Text': TRUE
+    'PHLU.Neos.NodeTypes:Content': TRUE
+    'PHLU.Neos.NodeTypes:PlainTextMixin': TRUE
+  ui:
+    label: 'Text'
+    icon: icon-file-text
+  properties:
+    text:
+      defaultValue: 'Text eingeben'
 
-# Text with image
-'PHLU.Neos.NodeTypes:TextWithImage':
-  abstract: TRUE
-  superTypes:
-    'TYPO3.Neos.NodeTypes:TextWithImage': TRUE
+
 
 

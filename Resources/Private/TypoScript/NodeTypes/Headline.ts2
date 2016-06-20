@@ -1,0 +1,5 @@
+prototype(PHLU.Neos.NodeTypes:Headline) < prototype(TYPO3.Neos:Content) {
+
+    tag = 'h1'
+
+}
