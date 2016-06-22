@@ -12,17 +12,30 @@
       groups:
         event:
           label: 'Veranstaltung'
-
   properties:
     date:
-      type: date
+      type: DateTime
       ui:
-        inlineEditable: TRUE
+        inlineEditable: FALSE
         reloadIfChanged: TRUE
-        label: 'Date'
+        label: 'Datum'
         inspector:
-          group: 'date'
+          group: 'event'
           position: 50
+          editorOptions:
+            format: 'd.m.Y'
+    time:
+     type: DateTime
+     ui:
+       inlineEditable: FALSE
+       reloadIfChanged: TRUE
+       label: 'Zeit'
+       inspector:
+         group: 'event'
+         position: 50
+         editorOptions:
+           format: 'h:i'
+
     location:
       type: string
       defaultValue: 'Ort'
