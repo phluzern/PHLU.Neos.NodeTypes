@@ -54,7 +54,9 @@ class SpliceArrayViewHelper extends AbstractViewHelper
                 $a = $spliceNum-1;
                 for ($i=0; $i<$spliceNum;$i++) {
                     if (isset($data[$counter][$i]) == false) {
-                        if (isset($data[1])) $data[$counter][$i] = $data[1][$a];
+                        if (isset($data[1]) && isset($data[$counter][$i])) {
+                            $data[$counter][$i] = $data[1][$a];
+                        }
                         $a--;
                     }
                 }
