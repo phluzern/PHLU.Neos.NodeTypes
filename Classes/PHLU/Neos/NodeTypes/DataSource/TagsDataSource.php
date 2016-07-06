@@ -29,8 +29,13 @@ class TagsDataSource extends AbstractDataSource {
 
         $tags = array();
 
-        $flowQuery = new FlowQuery(array($node->getParent()));
-       // $nodes = $flowQuery->parents()->find("[instanceof PHLU.Neos.NodeTypes:Tag]");
+        if ($node->getParent()->getNodeType()->getName() == 'PHLU.Corporate:Page.View.Default.Default') {
+            $flowQuery = new FlowQuery(array($node->getParent()->getParent()));
+        } else {
+            $flowQuery = new FlowQuery(array($node->getParent()));
+        }
+
+
         $nodes = $flowQuery->find("[instanceof PHLU.Neos.NodeTypes:Tag]")->get();
 
         foreach ($nodes as $tag) {
