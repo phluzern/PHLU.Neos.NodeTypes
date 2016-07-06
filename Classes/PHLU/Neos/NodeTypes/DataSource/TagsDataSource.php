@@ -13,7 +13,7 @@ class TagsDataSource extends AbstractDataSource {
      */
     static protected $identifier = 'phlu-neos-nodetypes-tags';
 
-
+    
 
     /**
      * Get data
