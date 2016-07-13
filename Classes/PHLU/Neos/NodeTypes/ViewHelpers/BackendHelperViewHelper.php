@@ -38,16 +38,7 @@ use TYPO3\TypoScript\TypoScriptObjects\Helpers\TypoScriptAwareViewInterface;
  */
 class BackendHelperViewHelper extends WrapViewHelper
 {
-    /**
-     * @var boolean
-     */
-    protected $escapeOutput = false;
 
-    /**
-     * @Flow\Inject
-     * @var ContentElementWrappingService
-     */
-    protected $contentElementWrappingService;
 
     /**
      * In live workspace this just renders a the content.
@@ -60,7 +51,7 @@ class BackendHelperViewHelper extends WrapViewHelper
     public function render(NodeInterface $node = null)
     {
 
-
+        if ($node && $node->getContext()->isInBackend() == false) return $this->renderChildren();
 
         $view = $this->viewHelperVariableContainer->getView();
         if (!$view instanceof TypoScriptAwareViewInterface) {
@@ -73,10 +64,10 @@ class BackendHelperViewHelper extends WrapViewHelper
             $node = $currentContext['node'];
         }
 
+        if ($node && $node->getContext()->isInBackend() == false) return $this->renderChildren();
 
-          $html = '<span class="backend-helper neos"><i class=" '.$node->getNodeType()->getFullConfiguration()['ui']['icon'].'"></i></span>';
-          $html .= $this->renderChildren();
-
+        $html = '<span class="backend-helper neos"><i class=" '.$node->getNodeType()->getFullConfiguration()['ui']['icon'].'"></i></span>';
+        $html .= $this->renderChildren();
 
         return $this->contentElementWrappingService->wrapContentObject($node, $typoScriptObject->getPath(), $html);
 
