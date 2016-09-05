@@ -1,0 +1,29 @@
+'PHLU.Neos.NodeTypes:Page':
+  childNodes:
+    database:
+      type: 'PHLU.Neos.NodeTypes:DatabaseCollection'
+      position: 'end'
+
+
+'PHLU.Neos.NodeTypes:Database':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: 'Datenbank'
+    icon: 'icon-database'
+  properties:
+    title:
+      defaultValue: 'Datenbank'
+
+
+'PHLU.Neos.NodeTypes:DatabaseCollection':
+  superTypes:
+    'TYPO3.Neos:Node': TRUE
+  constraints:
+    nodeTypes:
+      '*': FALSE
+      'PHLU.Neos.NodeTypes:Database': TRUE
+  ui:
+    label: 'Datenbank'
+    icon: 'icon-database'
+    position: 300
