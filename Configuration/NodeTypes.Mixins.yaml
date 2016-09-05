@@ -107,6 +107,14 @@
         inspector:
           group: 'teaser'
           position: 50
+          editorOptions:
+            features:
+              crop: TRUE
+            crop:
+              aspectRatio:
+                locked:
+                  width: 248
+                  height: 165
 
 
 
