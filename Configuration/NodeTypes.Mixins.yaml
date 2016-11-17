@@ -143,6 +143,30 @@
            multiple: true
 
 
+# Organisational Unit Membership selector mixin
+'PHLU.Neos.NodeTypes:OuMembershipMixin':
+  ui:
+    inspector:
+      groups:
+        ous:
+          label: 'Auswahl Zentrum Zugehörigkeit'
+  properties:
+    ou:
+      type: array
+      ui:
+        label: 'Zentrum'
+        reloadIfChanged: FALSE
+        reloadPageIfChanged: FALSE
+        inspector:
+          group: 'ous'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+           placeholder: 'Zentren auswählen'
+           dataSourceIdentifier: 'phlu-neos-nodetypes-ous'
+           allowEmpty: TRUE
+           multiple: true
+
+
 # plain text mixxin
 'PHLU.Neos.NodeTypes:PlainTextMixin':
   properties:
