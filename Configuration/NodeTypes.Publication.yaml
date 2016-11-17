@@ -1,0 +1,57 @@
+'PHLU.Neos.NodeTypes:Publication':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Database': TRUE
+  hybridsearch:
+    properties:
+      rawcontent: 'neosliveHybridsearchpublicationRaw'
+  ui:
+    label: 'Publikation'
+    icon: 'icon-cube'
+    position: 300
+    inspector:
+      groups:
+        publication:
+          label: 'Publication'
+  properties:
+    Id:
+      type: integer
+      ui:
+        label: 'Id'
+        inspector:
+          group: 'publication'
+    Citationstyle:
+      type: string
+      ui:
+        label: 'Situationsstil'
+        inspector:
+          group: 'publication'
+    Language:
+      type: string
+      ui:
+        label: 'Sprache'
+        inspector:
+          group: 'publication'
+    Projects:
+      type: array
+      ui:
+        label: 'Projekte'
+        inspector:
+          group: 'publication'
+    Date:
+     type: DateTime
+     ui:
+       label: 'Datum'
+       inspector:
+         group: 'publication'
+    PublicationTypeId:
+     type: integer
+     ui:
+       label: 'Type'
+       inspector:
+         group: 'publication'
+    Persons:
+     type: array
+     ui:
+       label: 'Personen'
+       inspector:
+         group: 'publication'
