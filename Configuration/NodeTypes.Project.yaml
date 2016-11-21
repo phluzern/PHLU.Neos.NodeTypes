@@ -76,6 +76,12 @@
        label: 'Status'
        inspector:
          group: 'project'
+    researchunit:
+     type: array
+     ui:
+       label: 'Status'
+       inspector:
+         group: 'project'
     organisationunits:
      type: array
      ui:
