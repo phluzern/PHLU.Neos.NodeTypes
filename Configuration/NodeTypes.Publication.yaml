@@ -43,7 +43,7 @@
        label: 'Datum'
        inspector:
          group: 'publication'
-    PublicationTypeId:
+    PublicationType:
      type: integer
      ui:
        label: 'Type'
