@@ -44,7 +44,7 @@
        inspector:
          group: 'publication'
     PublicationType:
-     type: integer
+     type: array
      ui:
        label: 'Type'
        inspector:
