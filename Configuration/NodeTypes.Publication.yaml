@@ -25,6 +25,12 @@
         label: 'Situationsstil'
         inspector:
           group: 'publication'
+    Url:
+      type: string
+      ui:
+        label: 'Url'
+        inspector:
+          group: 'publication'
     Language:
       type: string
       ui:
