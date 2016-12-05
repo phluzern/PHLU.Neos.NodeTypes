@@ -12,3 +12,15 @@
       groups:
         news:
           label: 'News'
+  properties:
+    date:
+      type: DateTime
+      ui:
+        inlineEditable: FALSE
+        reloadIfChanged: TRUE
+        label: 'Datum'
+        inspector:
+          group: 'news'
+          position: 50
+          editorOptions:
+            format: 'd.m.Y'
