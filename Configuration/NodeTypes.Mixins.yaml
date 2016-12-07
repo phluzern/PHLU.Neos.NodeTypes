@@ -149,12 +149,12 @@
     inspector:
       groups:
         ous:
-          label: 'Auswahl Zentrum Zugehörigkeit'
+          label: 'Zugehörigkeit'
   properties:
     ou:
       type: array
       ui:
-        label: 'Zentrum'
+        label: 'Zentrum, Institut oder Organisation'
         reloadIfChanged: FALSE
         reloadPageIfChanged: FALSE
         inspector:
