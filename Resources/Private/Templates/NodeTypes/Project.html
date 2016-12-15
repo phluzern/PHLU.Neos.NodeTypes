@@ -14,13 +14,7 @@
      "colleague": "<portrait:link node="{node}" eventoId="{node.properties.participants.Projektleitung.0.EventoID}" target="top"></portrait:link>",
      "familyName":"{node.properties.participants.Projektleitung.0.Nachname}",
      "givenName":"{node.properties.participants.Projektleitung.0.Vorname}",
-     "contactPoint":{
-        "@type":"ContactPoint",
-        "contactType": "customer service",
-        "telephone":"<f:format.raw>{node.properties.participants.Projektleitung.0.phone}</f:format.raw>",
-        "email":"<f:format.raw>{node.properties.participants.Projektleitung.0.email}</f:format.raw>",
-        "url":"<portrait:link node="{node}" eventoId="{node.properties.participants.Projektleitung.0.EventoID}" target="top"></portrait:link>"
-     }
+     "url":"<portrait:link node="{node}" eventoId="{node.properties.participants.Projektleitung.0.EventoID}" target="top"></portrait:link>"
   }
 }
 </script>
