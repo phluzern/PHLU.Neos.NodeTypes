@@ -1,0 +1,25 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace portrait=PHLU\Corporate\ViewHelpers\Portrait}
+
+<script type="application/ld+json" {attributes -> f:format.raw()}>
+{
+  "@context":"http://schema.org/",
+  "@type":"Dataset",
+  "name":"{node.properties.title}",
+  "description":"{node.properties.teasertextgerman}",
+  "url":"<f:uri.action action="load" controller="project" package="PHLU.Corporate" absolute="true" arguments="{project: node.properties.id,title: 'detail'}">Details
+</f:uri.action>",
+  "creator":{
+     "@type":"Person",
+     "colleague": "<portrait:link node="{node}" eventoId="{node.properties.participants.Projektleitung.0.EventoID}" target="top"></portrait:link>",
+     "familyName":"{node.properties.participants.Projektleitung.0.Nachname}",
+     "givenName":"{node.properties.participants.Projektleitung.0.Vorname}",
+     "contactPoint":{
+        "@type":"ContactPoint",
+        "contactType": "customer service",
+        "telephone":"{node.properties.participants.Projektleitung.0.phone}",
+        "email":"{node.properties.participants.Projektleitung.0.email}"
+     }
+  }
+}
+</script>
