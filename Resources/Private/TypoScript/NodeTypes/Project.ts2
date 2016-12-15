@@ -1,0 +1,6 @@
+
+prototype(PHLU.Neos.NodeTypes:Project) < prototype(TYPO3.Neos:Content) {
+
+
+
+}
