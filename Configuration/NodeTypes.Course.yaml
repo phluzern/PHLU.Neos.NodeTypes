@@ -1,0 +1,60 @@
+
+# abstract course
+'PHLU.Neos.NodeTypes:Course':
+  abstract: TRUE
+  superTypes:
+    'PHLU.Neos.NodeTypes:Database': TRUE
+  ui:
+    label: 'Kurs'
+  properties:
+    title:
+      defaultValue: ''
+    nr:
+      type: string
+    description:
+      type: string
+      ui:
+        label: 'Beschreibung'
+    ects:
+      type: integer
+      ui:
+        label: 'ECTS Punkte'
+    fee:
+      type: float
+      ui:
+        label: 'Kosten'
+    id:
+      type: integer
+    leaders:
+      type: array
+      ui:
+        label: 'Leitung'
+    targetgroups:
+      type: array
+      ui:
+        label: 'Zielgruppen'
+
+
+
+# abstract study
+'PHLU.Neos.NodeTypes:Course.Study':
+  abstract: TRUE
+  superTypes:
+    'PHLU.Neos.NodeTypes:Database': TRUE
+    'PHLU.Neos.NodeTypes:Course': TRUE
+  ui:
+    label: 'Studiengang'
+  properties:
+    graduation:
+      type: string
+      ui:
+        label: 'Abschluss'
+
+
+# Studiengang Weiterbildung
+'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Course.Study': TRUE
+  ui:
+    label: 'Weiterbildung Studiengang'
+
