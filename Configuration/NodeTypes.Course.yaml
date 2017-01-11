@@ -50,11 +50,28 @@
       ui:
         label: 'Abschluss'
 
+# abstract study
+'PHLU.Neos.NodeTypes:Course.Module':
+  abstract: TRUE
+  superTypes:
+    'PHLU.Neos.NodeTypes:Database': TRUE
+    'PHLU.Neos.NodeTypes:Course': TRUE
+  ui:
+    label: 'Modul'
+
 
 # Studiengang Weiterbildung
 'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
     'PHLU.Neos.NodeTypes:Course.Study': TRUE
+  ui:
+    label: 'Weiterbildung Studiengang'
+
+
+# Modul Weiterbildung
+'PHLU.Neos.NodeTypes:Course.Module.FurtherEducation':
+  superTypes:
+    'PHLU.Neos.NodeTypes:Course.Module': TRUE
   ui:
     label: 'Weiterbildung Studiengang'
 
