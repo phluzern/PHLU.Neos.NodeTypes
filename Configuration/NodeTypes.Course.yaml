@@ -7,6 +7,8 @@
   ui:
     label: 'Kurs'
   properties:
+    deleted:
+      type: boolean
     title:
       defaultValue: ''
     nr:
