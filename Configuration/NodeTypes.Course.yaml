@@ -2,6 +2,9 @@
 # abstract course
 'PHLU.Neos.NodeTypes:Course':
   abstract: TRUE
+  hybridsearch:
+    properties:
+      url: 'neosliveHybridsearchCourseUrl'
   superTypes:
     'PHLU.Neos.NodeTypes:Database': TRUE
   ui:
