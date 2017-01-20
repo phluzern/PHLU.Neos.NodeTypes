@@ -2,7 +2,6 @@
   superTypes:
     'PHLU.Neos.NodeTypes:Database': TRUE
   hybridsearch:
-    render: false
     properties:
       rawcontent: 'neosliveHybridsearchpublicationRaw'
   ui:

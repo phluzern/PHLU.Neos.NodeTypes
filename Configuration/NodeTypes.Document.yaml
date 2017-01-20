@@ -5,8 +5,6 @@
   constraints:
     nodeTypes:
       'TYPO3.Neos.NodeTypes:Page': FALSE
-  hybridsearch:
-    render: false
 
 'TYPO3.Neos.NodeTypes:Page':
   constraints:
