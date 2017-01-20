@@ -69,6 +69,7 @@
 'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
     'PHLU.Neos.NodeTypes:Course.Study': TRUE
+    'TYPO3.Neos:Content': TRUE
   ui:
     label: 'Weiterbildung Studiengang'
 
@@ -77,6 +78,7 @@
 'PHLU.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
     'PHLU.Neos.NodeTypes:Course.Module': TRUE
+    'TYPO3.Neos:Content': TRUE
   ui:
     label: 'Weiterbildung Kurs'
 
