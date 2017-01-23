@@ -6,9 +6,3 @@
     nodeTypes:
       'TYPO3.Neos.NodeTypes:Page': FALSE
 
-'TYPO3.Neos.NodeTypes:Page':
-  constraints:
-    nodeTypes:
-      'PHLU.Neos.NodeTypes:Page': FALSE
-
-
