@@ -1,9 +1,6 @@
 'PHLU.Neos.NodeTypes:Publication':
   superTypes:
     'PHLU.Neos.NodeTypes:Database': TRUE
-  hybridsearch:
-    properties:
-      rawcontent: 'neosliveHybridsearchpublicationRaw'
   ui:
     label: 'Publikation'
     icon: 'icon-cube'

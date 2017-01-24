@@ -4,7 +4,6 @@
   hybridsearch:
     properties:
       url: 'neosliveHybridsearchProjectUrl'
-      rawcontent: 'neosliveHybridsearchProjectRaw'
   ui:
     label: 'Project'
     icon: 'icon-cube'
