@@ -68,7 +68,6 @@
 # Studiengang Weiterbildung
 'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
-    'Neoslive.Hybridsearch:Content': TRUE
     'PHLU.Neos.NodeTypes:Course.Study': TRUE
   ui:
     label: 'Weiterbildung Studiengang'
@@ -77,7 +76,6 @@
 # Modul Weiterbildung
 'PHLU.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
-    'Neoslive.Hybridsearch:Content': TRUE
     'PHLU.Neos.NodeTypes:Course.Module': TRUE
   ui:
     label: 'Weiterbildung Kurs'
