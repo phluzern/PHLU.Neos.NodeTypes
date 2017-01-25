@@ -4,7 +4,6 @@
       type: 'PHLU.Neos.NodeTypes:DatabaseCollection'
       position: 'end'
 
-
 'PHLU.Neos.NodeTypes:Database':
   superTypes:
     'TYPO3.Neos:Content': TRUE
@@ -14,9 +13,6 @@
   properties:
     title:
       defaultValue: 'Datenbank'
-  hybridsearch:
-    render: false
-
 
 'PHLU.Neos.NodeTypes:DatabaseCollection':
   superTypes:
