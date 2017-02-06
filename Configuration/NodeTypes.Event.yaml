@@ -2,8 +2,8 @@
 
 'PHLU.Neos.NodeTypes:Event':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': '1'
-    'PHLU.Neos.NodeTypes:TeaserMixin': '1'
+    'PHLU.Neos.NodeTypes:Content': true
+    'PHLU.Neos.NodeTypes:TeaserMixin': true
   abstract: true
   ui:
     label: Veranstaltung
@@ -48,14 +48,14 @@
           position: 50
 'PHLU.Neos.NodeTypes:ContentCollection.Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:ContentCollection': '1'
+    'PHLU.Neos.NodeTypes:ContentCollection': true
   constraints:
     nodeTypes:
       '*': false
       'PHLU.Neos.NodeTypes:Event': true
 'PHLU.Neos.NodeTypes:Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': '1'
+    'PHLU.Neos.NodeTypes:Content': true
   abstract: true
   ui:
     label: 'Veranstaltungen (Sammlung)'

@@ -1,7 +1,7 @@
 
 'PHLU.Neos.NodeTypes:Publication':
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': '1'
+    'PHLU.Neos.NodeTypes:Database': true
   ui:
     label: Publikation
     icon: icon-cube

@@ -5,7 +5,7 @@
     properties:
       url: neosliveHybridsearchCourseUrl
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': '1'
+    'PHLU.Neos.NodeTypes:Database': true
   ui:
     label: Kurs
   properties:
@@ -40,8 +40,8 @@
 'PHLU.Neos.NodeTypes:Course.Study':
   abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': '1'
-    'PHLU.Neos.NodeTypes:Course': '1'
+    'PHLU.Neos.NodeTypes:Database': true
+    'PHLU.Neos.NodeTypes:Course': true
   ui:
     label: Studiengang
   properties:
@@ -52,17 +52,17 @@
 'PHLU.Neos.NodeTypes:Course.Module':
   abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': '1'
-    'PHLU.Neos.NodeTypes:Course': '1'
+    'PHLU.Neos.NodeTypes:Database': true
+    'PHLU.Neos.NodeTypes:Course': true
   ui:
     label: Modul
 'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
-    'PHLU.Neos.NodeTypes:Course.Study': '1'
+    'PHLU.Neos.NodeTypes:Course.Study': true
   ui:
     label: 'Weiterbildung Studiengang'
 'PHLU.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
-    'PHLU.Neos.NodeTypes:Course.Module': '1'
+    'PHLU.Neos.NodeTypes:Course.Module': true
   ui:
     label: 'Weiterbildung Kurs'

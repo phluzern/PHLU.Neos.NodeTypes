@@ -1,7 +1,7 @@
 
 'PHLU.Neos.NodeTypes:Project':
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': '1'
+    'PHLU.Neos.NodeTypes:Database': true
   hybridsearch:
     properties:
       url: neosliveHybridsearchProjectUrl
