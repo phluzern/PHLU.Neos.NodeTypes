@@ -1,4 +1,4 @@
-prototype(PHLU.Neos.NodeTypes:Page) < prototype(TYPO3.Neos.NodeTypes:Page) {
+prototype(PHLU.Neos.NodeTypes:Page) < prototype(Neos.NodeTypes:Page) {
 
 
 }
