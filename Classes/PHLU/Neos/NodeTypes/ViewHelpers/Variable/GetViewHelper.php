@@ -9,7 +9,7 @@ namespace PHLU\Neos\NodeTypes\ViewHelpers\Variable;
  */
 
 use Neos\Flow\Annotations as Flow;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 use \Neos\Utility\ObjectAccess;
 
 /**

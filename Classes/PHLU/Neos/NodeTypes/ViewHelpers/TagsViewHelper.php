@@ -12,7 +12,7 @@ namespace PHLU\Neos\NodeTypes\ViewHelpers;
  */
 
 use Neos\Flow\Annotations as Flow;
-use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
 use PHLU\Neos\NodeTypes\DataSource\TagsDataSource;
 use Neos\ContentRepository\Domain\Model\Node;
 
