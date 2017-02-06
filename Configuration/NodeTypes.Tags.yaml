@@ -1,30 +1,31 @@
+
 'PHLU.Neos.NodeTypes:Tag':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
   ui:
-    label: 'Tag'
+    label: Tag
     inlineEditable: true
     icon: icon-tag
     inspector:
       groups:
         general:
-          label: 'Allgemein'
+          label: Allgemein
   properties:
     label:
       type: string
-      defaultValue: 'Label'
+      defaultValue: Label
       ui:
-        label: 'Label'
-        reloadIfChanged: TRUE
+        label: Label
+        reloadIfChanged: true
         inspector:
-          group: 'general'
+          group: general
           position: 50
     icon:
       type: string
       defaultValue: 'fa fa-tag'
       ui:
-        label: 'Icon'
-        reloadIfChanged: TRUE
+        label: Icon
+        reloadIfChanged: true
         inspector:
-          group: 'general'
+          group: general
           position: 50

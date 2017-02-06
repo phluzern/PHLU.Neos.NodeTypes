@@ -1,14 +1,13 @@
 
-# abstract course
 'PHLU.Neos.NodeTypes:Course':
-  abstract: TRUE
+  abstract: true
   hybridsearch:
     properties:
-      url: 'neosliveHybridsearchCourseUrl'
+      url: neosliveHybridsearchCourseUrl
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': TRUE
+    'PHLU.Neos.NodeTypes:Database': '1'
   ui:
-    label: 'Kurs'
+    label: Kurs
   properties:
     deleted:
       type: boolean
@@ -19,7 +18,7 @@
     description:
       type: string
       ui:
-        label: 'Beschreibung'
+        label: Beschreibung
     ects:
       type: integer
       ui:
@@ -27,56 +26,43 @@
     fee:
       type: float
       ui:
-        label: 'Kosten'
+        label: Kosten
     id:
       type: integer
     leaders:
       type: array
       ui:
-        label: 'Leitung'
+        label: Leitung
     targetgroups:
       type: array
       ui:
-        label: 'Zielgruppen'
-
-
-
-# abstract study
+        label: Zielgruppen
 'PHLU.Neos.NodeTypes:Course.Study':
-  abstract: TRUE
+  abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': TRUE
-    'PHLU.Neos.NodeTypes:Course': TRUE
+    'PHLU.Neos.NodeTypes:Database': '1'
+    'PHLU.Neos.NodeTypes:Course': '1'
   ui:
-    label: 'Studiengang'
+    label: Studiengang
   properties:
     graduation:
       type: string
       ui:
-        label: 'Abschluss'
-
-# abstract study
+        label: Abschluss
 'PHLU.Neos.NodeTypes:Course.Module':
-  abstract: TRUE
+  abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': TRUE
-    'PHLU.Neos.NodeTypes:Course': TRUE
+    'PHLU.Neos.NodeTypes:Database': '1'
+    'PHLU.Neos.NodeTypes:Course': '1'
   ui:
-    label: 'Modul'
-
-
-# Studiengang Weiterbildung
+    label: Modul
 'PHLU.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
-    'PHLU.Neos.NodeTypes:Course.Study': TRUE
+    'PHLU.Neos.NodeTypes:Course.Study': '1'
   ui:
     label: 'Weiterbildung Studiengang'
-
-
-# Modul Weiterbildung
 'PHLU.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
-    'PHLU.Neos.NodeTypes:Course.Module': TRUE
+    'PHLU.Neos.NodeTypes:Course.Module': '1'
   ui:
     label: 'Weiterbildung Kurs'
-

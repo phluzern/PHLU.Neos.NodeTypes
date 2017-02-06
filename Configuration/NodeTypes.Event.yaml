@@ -1,75 +1,70 @@
 # Teaser mixin
+
 'PHLU.Neos.NodeTypes:Event':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
-    'PHLU.Neos.NodeTypes:TeaserMixin': TRUE
-  abstract: TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
+    'PHLU.Neos.NodeTypes:TeaserMixin': '1'
+  abstract: true
   ui:
-    label: 'Veranstaltung'
-    icon: 'icon-picture'
+    label: Veranstaltung
+    icon: icon-picture
     position: 300
     inspector:
       groups:
         event:
-          label: 'Veranstaltung'
+          label: Veranstaltung
   properties:
     date:
       type: DateTime
       ui:
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
-        label: 'Datum'
+        inlineEditable: false
+        reloadIfChanged: true
+        label: Datum
         inspector:
-          group: 'event'
+          group: event
           position: 50
           editorOptions:
-            format: 'd.m.Y'
+            format: d.m.Y
     time:
-     type: DateTime
-     ui:
-       inlineEditable: FALSE
-       reloadIfChanged: TRUE
-       label: 'Zeit'
-       inspector:
-         group: 'event'
-         position: 50
-         editorOptions:
-           format: 'h:i'
-
+      type: DateTime
+      ui:
+        inlineEditable: false
+        reloadIfChanged: true
+        label: Zeit
+        inspector:
+          group: event
+          position: 50
+          editorOptions:
+            format: 'h:i'
     location:
       type: string
-      defaultValue: 'Ort'
+      defaultValue: Ort
       ui:
-        inlineEditable: TRUE
-        reloadIfChanged: TRUE
-        label: 'Ort'
+        inlineEditable: true
+        reloadIfChanged: true
+        label: Ort
         inspector:
-          group: 'event'
+          group: event
           position: 50
-
-
-# Events collection
 'PHLU.Neos.NodeTypes:ContentCollection.Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:ContentCollection': TRUE
+    'PHLU.Neos.NodeTypes:ContentCollection': '1'
   constraints:
     nodeTypes:
       '*': false
       'PHLU.Neos.NodeTypes:Event': true
-
-# Events
 'PHLU.Neos.NodeTypes:Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
-  abstract: TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
+  abstract: true
   ui:
     label: 'Veranstaltungen (Sammlung)'
-    icon: 'icon-picture'
+    icon: icon-picture
     position: 300
     inspector:
       groups:
         event:
-          label: 'Veranstaltung'
+          label: Veranstaltung
   childNodes:
     main:
       type: 'PHLU.Neos.NodeTypes:ContentCollection.Events'

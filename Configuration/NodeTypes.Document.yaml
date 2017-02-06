@@ -1,8 +1,8 @@
+
 'PHLU.Neos.NodeTypes:Page':
   superTypes:
-    'TYPO3.Neos.NodeTypes:Page': TRUE
-  abstract: TRUE
+    'TYPO3.Neos.NodeTypes:Page': '1'
+  abstract: true
   constraints:
     nodeTypes:
-      'TYPO3.Neos.NodeTypes:Page': FALSE
-
+      'TYPO3.Neos.NodeTypes:Page': false

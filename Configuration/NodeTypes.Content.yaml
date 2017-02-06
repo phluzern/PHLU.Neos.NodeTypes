@@ -1,51 +1,38 @@
+
 'PHLU.Neos.NodeTypes:Content':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
-  abstract: TRUE
-
-
+    'TYPO3.Neos:Content': '1'
+  abstract: true
 'PHLU.Neos.NodeTypes:ContentCollection':
   superTypes:
-    'TYPO3.Neos:ContentCollection': TRUE
-  abstract: TRUE
+    'TYPO3.Neos:ContentCollection': '1'
+  abstract: true
   constraints:
     nodeTypes:
-      'PHLU.Neos.NodeTypes:Content': FALSE
-
-
+      'PHLU.Neos.NodeTypes:Content': false
 'TYPO3.Neos:ContentCollection':
   constraints:
     nodeTypes:
-      'PHLU.Neos.NodeTypes:Content': FALSE
-
-
-# headline
+      'PHLU.Neos.NodeTypes:Content': false
 'PHLU.Neos.NodeTypes:Headline':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
-    'PHLU.Neos.NodeTypes:PlainTextMixin': TRUE
-  abstract: TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
+    'PHLU.Neos.NodeTypes:PlainTextMixin': '1'
+  abstract: true
   ui:
-    label: 'Titel'
+    label: Titel
     icon: icon-header
   properties:
     text:
       defaultValue: 'Titel eingeben'
-
-
-# Text default
 'PHLU.Neos.NodeTypes:TextPlain':
-  abstract: TRUE
+  abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
-    'PHLU.Neos.NodeTypes:PlainTextMixin': TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
+    'PHLU.Neos.NodeTypes:PlainTextMixin': '1'
   ui:
-    label: 'Text'
+    label: Text
     icon: icon-file-text
   properties:
     text:
       defaultValue: 'Text eingeben'
-
-
-
-

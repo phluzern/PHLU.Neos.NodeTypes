@@ -1,26 +1,27 @@
 # News Item
+
 'PHLU.Neos.NodeTypes:NewsItem':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': TRUE
-    'PHLU.Neos.NodeTypes:TeaserMixin': TRUE
-  abstract: TRUE
+    'PHLU.Neos.NodeTypes:Content': '1'
+    'PHLU.Neos.NodeTypes:TeaserMixin': '1'
+  abstract: true
   ui:
-    label: 'News'
-    icon: 'icon-picture'
+    label: News
+    icon: icon-picture
     position: 300
     inspector:
       groups:
         news:
-          label: 'News'
+          label: News
   properties:
     date:
       type: DateTime
       ui:
-        inlineEditable: FALSE
-        reloadIfChanged: TRUE
-        label: 'Datum'
+        inlineEditable: false
+        reloadIfChanged: true
+        label: Datum
         inspector:
-          group: 'news'
+          group: news
           position: 50
           editorOptions:
-            format: 'd.m.Y'
+            format: d.m.Y

@@ -1,62 +1,63 @@
+
 'PHLU.Neos.NodeTypes:Publication':
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': TRUE
+    'PHLU.Neos.NodeTypes:Database': '1'
   ui:
-    label: 'Publikation'
-    icon: 'icon-cube'
+    label: Publikation
+    icon: icon-cube
     position: 300
     inspector:
       groups:
         publication:
-          label: 'Publication'
+          label: Publication
   properties:
     Id:
       type: integer
       ui:
-        label: 'Id'
+        label: Id
         inspector:
-          group: 'publication'
+          group: publication
     Citationstyle:
       type: string
       ui:
-        label: 'Situationsstil'
+        label: Situationsstil
         inspector:
-          group: 'publication'
+          group: publication
     Url:
       type: string
       ui:
-        label: 'Url'
+        label: Url
         inspector:
-          group: 'publication'
+          group: publication
     Language:
       type: string
       ui:
-        label: 'Sprache'
+        label: Sprache
         inspector:
-          group: 'publication'
+          group: publication
     Projects:
       type: array
       ui:
-        label: 'Projekte'
+        label: Projekte
         inspector:
-          group: 'publication'
+          group: publication
     Date:
-     type: DateTime
-     ui:
-       label: 'Datum'
-       inspector:
-         group: 'publication'
+      type: DateTime
+      ui:
+        label: Datum
+        inspector:
+          group: publication
     PublicationType:
-     type: array
-     ui:
-       label: 'Type'
-       inspector:
-         group: 'publication'
+      type: array
+      ui:
+        label: Type
+        inspector:
+          group: publication
     Persons:
-     type: array
-     ui:
-       label: 'Personen'
-       inspector:
-         group: 'publication'
+      type: array
+      ui:
+        label: Personen
+        inspector:
+          group: publication
     Organisations:
       type: array

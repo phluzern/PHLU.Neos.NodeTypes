@@ -1,137 +1,138 @@
+
 'PHLU.Neos.NodeTypes:Project':
   superTypes:
-    'PHLU.Neos.NodeTypes:Database': TRUE
+    'PHLU.Neos.NodeTypes:Database': '1'
   hybridsearch:
     properties:
-      url: 'neosliveHybridsearchProjectUrl'
+      url: neosliveHybridsearchProjectUrl
   ui:
-    label: 'Project'
-    icon: 'icon-cube'
+    label: Project
+    icon: icon-cube
     position: 300
     inspector:
       groups:
         project:
-          label: 'Project'
+          label: Project
   properties:
     title:
       type: string
     id:
       type: integer
       ui:
-        label: 'Id'
+        label: Id
         inspector:
-          group: 'project'
+          group: project
     status:
       type: string
       ui:
-        label: 'Status'
+        label: Status
         inspector:
-          group: 'project'
+          group: project
     statuslifetime:
       type: string
       ui:
         label: 'Status Laufzeite'
         inspector:
-          group: 'project'
+          group: project
     titlegerman:
       type: string
       ui:
         label: 'Titel deutsch'
         inspector:
-          group: 'project'
+          group: project
     titleenglish:
       type: string
       ui:
         label: 'Titel englisch'
         inspector:
-          group: 'project'
+          group: project
     teasertextgerman:
       type: string
       ui:
-        label: 'Status'
+        label: Status
         inspector:
-          group: 'project'
+          group: project
     teasertextenglish:
-     type: string
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: string
+      ui:
+        label: Status
+        inspector:
+          group: project
     abstracttextgerman:
-     type: string
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: string
+      ui:
+        label: Status
+        inspector:
+          group: project
     abstracttextenglish:
-     type: string
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: string
+      ui:
+        label: Status
+        inspector:
+          group: project
     researchmainfocus:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     researchunit:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     organisationunits:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     financingtypes:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     photos:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     documents:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     links:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     participants:
-     type: array
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: array
+      ui:
+        label: Status
+        inspector:
+          group: project
     startdate:
-     type: DateTime
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: DateTime
+      ui:
+        label: Status
+        inspector:
+          group: project
     enddate:
-     type: DateTime
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: DateTime
+      ui:
+        label: Status
+        inspector:
+          group: project
     lastmodify:
-     type: DateTime
-     ui:
-       label: 'Status'
-       inspector:
-         group: 'project'
+      type: DateTime
+      ui:
+        label: Status
+        inspector:
+          group: project
