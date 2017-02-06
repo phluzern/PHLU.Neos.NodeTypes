@@ -3,7 +3,7 @@ namespace PHLU\Neos\NodeTypes\DataSource;
 
 use TYPO3\Neos\Service\DataSource\AbstractDataSource;
 use TYPO3\TYPO3CR\Domain\Model\NodeInterface;
-use TYPO3\Eel\FlowQuery\FlowQuery;
+use Neos\Eel\FlowQuery\FlowQuery;
 
 class TagsDataSource extends AbstractDataSource {
 
