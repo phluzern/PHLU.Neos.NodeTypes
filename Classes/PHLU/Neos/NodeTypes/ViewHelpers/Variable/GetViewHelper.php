@@ -8,9 +8,9 @@ namespace PHLU\Neos\NodeTypes\ViewHelpers\Variable;
  * LICENSE.md file that was distributed with this source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
-use \TYPO3\Flow\Reflection\ObjectAccess;
+use \Neos\Flow\Reflection\ObjectAccess;
 
 /**
  * ### Variable: Get

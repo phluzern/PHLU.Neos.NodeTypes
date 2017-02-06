@@ -11,10 +11,10 @@ namespace PHLU\Neos\NodeTypes\Command;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Cli\CommandController;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
 use TYPO3\TYPO3CR\Domain\Service\NodeTypeManager;
-use TYPO3\Flow\Package\PackageManager;
+use Neos\Flow\Package\PackageManager;
 
 
 /**
@@ -33,7 +33,7 @@ class NodeDefinitionsCommandController extends CommandController
 
     /**
      * @Flow\Inject
-     * @var \TYPO3\Flow\Configuration\ConfigurationManager
+     * @var \Neos\Flow\Configuration\ConfigurationManager
      */
     protected $configurationManager;
 
