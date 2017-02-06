@@ -61,7 +61,7 @@
         inspector:
           group: 'teaser'
           position: 50
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             rows: 7
         aloha:
@@ -135,7 +135,7 @@
         reloadPageIfChanged: FALSE
         inspector:
           group: 'tags'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
            placeholder: 'Tags auswählen'
            dataSourceIdentifier: 'phlu-neos-nodetypes-tags'
@@ -159,7 +159,7 @@
         reloadPageIfChanged: FALSE
         inspector:
           group: 'ous'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
            placeholder: 'Zentren auswählen'
            dataSourceIdentifier: 'phlu-neos-nodetypes-ous'

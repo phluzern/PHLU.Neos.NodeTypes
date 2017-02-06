@@ -1,16 +1,16 @@
 
 'PHLU.Neos.NodeTypes:Content':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   abstract: true
 'PHLU.Neos.NodeTypes:ContentCollection':
   superTypes:
-    'TYPO3.Neos:ContentCollection': true
+    'Neos.Neos:ContentCollection': true
   abstract: true
   constraints:
     nodeTypes:
       'PHLU.Neos.NodeTypes:Content': false
-'TYPO3.Neos:ContentCollection':
+'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:
       'PHLU.Neos.NodeTypes:Content': false

@@ -15,7 +15,7 @@ class ContentElementWrappingServiceAspect
 
 
     /**
-     * @Flow\Around("method(TYPO3\Neos\Service\ContentElementWrappingService->wrapContentObject(node.nodeType.fullConfiguration.ui.selectHelper == TRUE))")
+     * @Flow\Around("method(Neos\Neos\Service\ContentElementWrappingService->wrapContentObject(node.nodeType.fullConfiguration.ui.selectHelper == TRUE))")
      * @return void
      */
     public function wrapContentObjectWithBackendHelperIcon(JoinPointInterface $joinPoint)

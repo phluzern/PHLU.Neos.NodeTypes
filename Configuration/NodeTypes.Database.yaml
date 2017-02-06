@@ -6,7 +6,7 @@
       position: end
 'PHLU.Neos.NodeTypes:Database':
   superTypes:
-    'TYPO3.Neos:Content': true
+    'Neos.Neos:Content': true
   ui:
     label: Datenbank
     icon: icon-database
@@ -15,7 +15,7 @@
       defaultValue: Datenbank
 'PHLU.Neos.NodeTypes:DatabaseCollection':
   superTypes:
-    'TYPO3.Neos:Node': true
+    'Neos.Neos:Node': true
   constraints:
     nodeTypes:
       '*': false
