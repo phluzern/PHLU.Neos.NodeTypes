@@ -1,5 +1,5 @@
 
-prototype(PHLU.Neos.NodeTypes:Project) < prototype(TYPO3.Neos:Content) {
+prototype(PHLU.Neos.NodeTypes:Project) < prototype(Neos.Neos:Content) {
 
 
 
