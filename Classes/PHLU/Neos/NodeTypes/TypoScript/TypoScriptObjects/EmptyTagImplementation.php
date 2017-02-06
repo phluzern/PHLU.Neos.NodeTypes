@@ -12,7 +12,7 @@ namespace PHLU\Neos\NodeTypes\TypoScript\TypoScriptObjects;
  */
 
 use Neos\Flow\Annotations as Flow;
-use Neos\Fusion\TypoScriptObjects\TagImplementation;
+use Neos\Fusion\FusionObjects\TagImplementation;
 
 /**
  * A TypoScript object for tag based content
