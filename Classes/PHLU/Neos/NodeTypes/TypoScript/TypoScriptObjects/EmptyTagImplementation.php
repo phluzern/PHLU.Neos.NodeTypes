@@ -2,7 +2,7 @@
 namespace PHLU\Neos\NodeTypes\TypoScript\TypoScriptObjects;
 
 /*
- * This file is part of the TYPO3.TypoScript package.
+ * This file is part of the Neos.Fusion package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -12,7 +12,7 @@ namespace PHLU\Neos\NodeTypes\TypoScript\TypoScriptObjects;
  */
 
 use Neos\Flow\Annotations as Flow;
-use TYPO3\TypoScript\TypoScriptObjects\TagImplementation;
+use Neos\Fusion\TypoScriptObjects\TagImplementation;
 
 /**
  * A TypoScript object for tag based content
