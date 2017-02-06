@@ -100,7 +100,7 @@
             'strippedElements': ['*'] # If not set the default setting is used.
             'autoparagraph': FALSE # Automatically wrap non-wrapped text blocks in paragraph blocks.
     teaserImage:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: 'Bild'
         reloadIfChanged: TRUE
