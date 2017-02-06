@@ -14,7 +14,7 @@ namespace PHLU\Neos\NodeTypes\ViewHelpers;
 use Neos\Flow\Annotations as Flow;
 use TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper;
 use PHLU\Neos\NodeTypes\DataSource\TagsDataSource;
-use TYPO3\TYPO3CR\Domain\Model\Node;
+use Neos\ContentRepository\Domain\Model\Node;
 
 /**
  * ViewHelper to find the closest document node to a given node

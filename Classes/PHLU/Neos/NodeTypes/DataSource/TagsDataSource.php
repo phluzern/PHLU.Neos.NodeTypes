@@ -2,7 +2,7 @@
 namespace PHLU\Neos\NodeTypes\DataSource;
 
 use Neos\Neos\Service\DataSource\AbstractDataSource;
-use TYPO3\TYPO3CR\Domain\Model\NodeInterface;
+use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\Eel\FlowQuery\FlowQuery;
 
 class TagsDataSource extends AbstractDataSource {

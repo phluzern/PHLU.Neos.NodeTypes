@@ -1,6 +1,15 @@
 
-TYPO3:
-  TYPO3CR:
+Neos:
+  Neos:
+    typoScript:
+      autoInclude:
+        PHLU.Neos.NodeTypes: true
+    userInterface:
+      translation:
+        autoInclude:
+          PHLU.Neos.NodeTypes:
+            - 'NodeTypes/*'
+  ContentRepository:
     contentDimensions:
       language:
         label: Sprache
@@ -24,13 +33,3 @@ TYPO3:
             values:
               - it
             uriSegment: it
-Neos:
-  Neos:
-    typoScript:
-      autoInclude:
-        PHLU.Neos.NodeTypes: true
-    userInterface:
-      translation:
-        autoInclude:
-          PHLU.Neos.NodeTypes:
-            - 'NodeTypes/*'

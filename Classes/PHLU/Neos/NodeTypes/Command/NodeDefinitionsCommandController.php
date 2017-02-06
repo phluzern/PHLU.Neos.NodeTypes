@@ -13,7 +13,7 @@ namespace PHLU\Neos\NodeTypes\Command;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Cli\CommandController;
-use TYPO3\TYPO3CR\Domain\Service\NodeTypeManager;
+use Neos\ContentRepository\Domain\Service\NodeTypeManager;
 use Neos\Flow\Package\PackageManager;
 
 
