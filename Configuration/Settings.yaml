@@ -1,14 +1,14 @@
 
 Neos:
   Neos:
-    typoScript:
-      autoInclude:
-        PHLU.Neos.NodeTypes: true
     userInterface:
       translation:
         autoInclude:
           PHLU.Neos.NodeTypes:
             - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        PHLU.Neos.NodeTypes: true
   ContentRepository:
     contentDimensions:
       language:
