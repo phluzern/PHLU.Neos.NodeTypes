@@ -4,11 +4,11 @@ Neos:
     userInterface:
       translation:
         autoInclude:
-          PHLU.Neos.NodeTypes:
+          Phlu.Neos.NodeTypes:
             - 'NodeTypes/*'
     fusion:
       autoInclude:
-        PHLU.Neos.NodeTypes: true
+        Phlu.Neos.NodeTypes: true
   ContentRepository:
     contentDimensions:
       language:

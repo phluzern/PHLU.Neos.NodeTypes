@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\Command;
+namespace Phlu\Neos\NodeTypes\Command;
 
 /*
  * This file is part of the Neos.Neos package.

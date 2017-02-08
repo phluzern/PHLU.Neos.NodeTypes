@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\ViewHelpers;
+namespace Phlu\Neos\NodeTypes\ViewHelpers;
 
 /*
  * This file is part of the Neos.Neos package.

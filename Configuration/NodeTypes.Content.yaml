@@ -1,23 +1,23 @@
 
-'PHLU.Neos.NodeTypes:Content':
+'Phlu.Neos.NodeTypes:Content':
   superTypes:
     'Neos.Neos:Content': true
   abstract: true
-'PHLU.Neos.NodeTypes:ContentCollection':
+'Phlu.Neos.NodeTypes:ContentCollection':
   superTypes:
     'Neos.Neos:ContentCollection': true
   abstract: true
   constraints:
     nodeTypes:
-      'PHLU.Neos.NodeTypes:Content': false
+      'Phlu.Neos.NodeTypes:Content': false
 'Neos.Neos:ContentCollection':
   constraints:
     nodeTypes:
-      'PHLU.Neos.NodeTypes:Content': false
-'PHLU.Neos.NodeTypes:Headline':
+      'Phlu.Neos.NodeTypes:Content': false
+'Phlu.Neos.NodeTypes:Headline':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
-    'PHLU.Neos.NodeTypes:PlainTextMixin': true
+    'Phlu.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:PlainTextMixin': true
   abstract: true
   ui:
     label: Titel
@@ -25,11 +25,11 @@
   properties:
     text:
       defaultValue: 'Titel eingeben'
-'PHLU.Neos.NodeTypes:TextPlain':
+'Phlu.Neos.NodeTypes:TextPlain':
   abstract: true
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
-    'PHLU.Neos.NodeTypes:PlainTextMixin': true
+    'Phlu.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:PlainTextMixin': true
   ui:
     label: Text
     icon: icon-file-text

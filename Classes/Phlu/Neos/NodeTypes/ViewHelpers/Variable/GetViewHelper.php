@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\ViewHelpers\Variable;
+namespace Phlu\Neos\NodeTypes\ViewHelpers\Variable;
 
 /*
  * This file is part of the FluidTYPO3/Vhs project under GPLv2 or later.

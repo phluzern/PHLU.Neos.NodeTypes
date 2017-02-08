@@ -1,5 +1,5 @@
 # Teaser mixin
-'PHLU.Neos.NodeTypes:TeaserMixin':
+'Phlu.Neos.NodeTypes:TeaserMixin':
   ui:
     inspector:
       groups:
@@ -120,7 +120,7 @@
 
 
 # Filter tags mixin
-'PHLU.Neos.NodeTypes:TagMixin':
+'Phlu.Neos.NodeTypes:TagMixin':
   ui:
     inspector:
       groups:
@@ -144,7 +144,7 @@
 
 
 # Organisational Unit Membership selector mixin
-'PHLU.Neos.NodeTypes:OuMembershipMixin':
+'Phlu.Neos.NodeTypes:OuMembershipMixin':
   ui:
     inspector:
       groups:
@@ -168,7 +168,7 @@
 
 
 # plain text mixxin
-'PHLU.Neos.NodeTypes:PlainTextMixin':
+'Phlu.Neos.NodeTypes:PlainTextMixin':
   properties:
     text:
       type: string
@@ -218,7 +218,7 @@
 
 
 # plain text mixxin
-'PHLU.Neos.NodeTypes:PlainTitleMixin':
+'Phlu.Neos.NodeTypes:PlainTitleMixin':
   properties:
     title:
       type: string

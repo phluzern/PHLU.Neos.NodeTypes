@@ -1,4 +1,4 @@
-prototype(PHLU.Neos.NodeTypes:Content) < prototype(Neos.Neos:Content) {
+prototype(Phlu.Neos.NodeTypes:Content) < prototype(Neos.Neos:Content) {
 
 
 }

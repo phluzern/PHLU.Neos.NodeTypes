@@ -1,7 +1,7 @@
 
-'PHLU.Neos.NodeTypes:Tag':
+'Phlu.Neos.NodeTypes:Tag':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:Content': true
   ui:
     label: Tag
     inlineEditable: true

@@ -1,8 +1,8 @@
 <?php
-namespace PHLU\Neos\NodeTypes\Controller;
+namespace Phlu\Neos\NodeTypes\Controller;
 
 /*
- * This file is part of the PHLU.Neos.NodeTypes package.
+ * This file is part of the Phlu.Neos.NodeTypes package.
  */
 
 use Neos\Flow\Annotations as Flow;

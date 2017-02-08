@@ -1,9 +1,9 @@
 # News Item
 
-'PHLU.Neos.NodeTypes:NewsItem':
+'Phlu.Neos.NodeTypes:NewsItem':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
-    'PHLU.Neos.NodeTypes:TeaserMixin': true
+    'Phlu.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:TeaserMixin': true
   abstract: true
   ui:
     label: News

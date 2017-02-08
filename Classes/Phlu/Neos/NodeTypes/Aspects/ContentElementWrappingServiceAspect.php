@@ -1,6 +1,6 @@
 <?php
 
-namespace PHLU\Neos\NodeTypes\Aspects;
+namespace Phlu\Neos\NodeTypes\Aspects;
 
 
 use Neos\Flow\Annotations as Flow;

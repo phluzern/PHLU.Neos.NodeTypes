@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\TypoScript\TypoScriptObjects;
+namespace Phlu\Neos\NodeTypes\TypoScript\TypoScriptObjects;
 
 /*
  * This file is part of the Neos.Fusion package.

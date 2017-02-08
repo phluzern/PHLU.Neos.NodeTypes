@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PHLU.Neos.NodeTypes'
+project = u'Phlu.Neos.NodeTypes'
 copyright = u'2016 and onwards by the authors'
 author = u'Author and Contributors'
 
@@ -214,7 +214,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PHLU.Neos.NodeTypes'
+htmlhelp_basename = 'Phlu.Neos.NodeTypes'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -236,7 +236,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PHLU.Neos.NodeTypes.tex', u'PHLU.Neos.NodeTypes Documentation',
+  (master_doc, 'Phlu.Neos.NodeTypes.tex', u'Phlu.Neos.NodeTypes Documentation',
    u'The author', 'manual'),
 ]
 
@@ -266,7 +266,7 @@ latex_use_parts = True
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PHLU.Neos.NodeTypes', u'PHLU.Neos.NodeTypes Documentation',
+    (master_doc, 'Phlu.Neos.NodeTypes', u'Phlu.Neos.NodeTypes Documentation',
      [author], 1)
 ]
 
@@ -280,8 +280,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'PHLU.Neos.NodeTypes', u'PHLU.Neos.NodeTypes Documentation',
-   author, 'PHLU.Neos.NodeTypes', '',
+  (master_doc, 'Phlu.Neos.NodeTypes', u'Phlu.Neos.NodeTypes Documentation',
+   author, 'Phlu.Neos.NodeTypes', '',
    'Miscellaneous'),
 ]
 

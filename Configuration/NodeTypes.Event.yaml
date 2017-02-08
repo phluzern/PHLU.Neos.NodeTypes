@@ -1,9 +1,9 @@
 # Teaser mixin
 
-'PHLU.Neos.NodeTypes:Event':
+'Phlu.Neos.NodeTypes:Event':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
-    'PHLU.Neos.NodeTypes:TeaserMixin': true
+    'Phlu.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:TeaserMixin': true
   abstract: true
   ui:
     label: Veranstaltung
@@ -46,16 +46,16 @@
         inspector:
           group: event
           position: 50
-'PHLU.Neos.NodeTypes:ContentCollection.Events':
+'Phlu.Neos.NodeTypes:ContentCollection.Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:ContentCollection': true
+    'Phlu.Neos.NodeTypes:ContentCollection': true
   constraints:
     nodeTypes:
       '*': false
-      'PHLU.Neos.NodeTypes:Event': true
-'PHLU.Neos.NodeTypes:Events':
+      'Phlu.Neos.NodeTypes:Event': true
+'Phlu.Neos.NodeTypes:Events':
   superTypes:
-    'PHLU.Neos.NodeTypes:Content': true
+    'Phlu.Neos.NodeTypes:Content': true
   abstract: true
   ui:
     label: 'Veranstaltungen (Sammlung)'
@@ -67,4 +67,4 @@
           label: Veranstaltung
   childNodes:
     main:
-      type: 'PHLU.Neos.NodeTypes:ContentCollection.Events'
+      type: 'Phlu.Neos.NodeTypes:ContentCollection.Events'

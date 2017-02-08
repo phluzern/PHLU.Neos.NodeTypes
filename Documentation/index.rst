@@ -1,4 +1,4 @@
-PHLU.Neos.NodeTypes |version| Documentation
+Phlu.Neos.NodeTypes |version| Documentation
 ==================================================================================================
 
 This documentation covering version |release| has been rendered at: |today|

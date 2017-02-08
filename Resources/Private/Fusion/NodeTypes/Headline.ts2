@@ -1,4 +1,4 @@
-prototype(PHLU.Neos.NodeTypes:Headline) < prototype(Neos.Neos:Content) {
+prototype(Phlu.Neos.NodeTypes:Headline) < prototype(Neos.Neos:Content) {
 
     tag = 'h1'
 

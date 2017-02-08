@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\DataSource;
+namespace Phlu\Neos\NodeTypes\DataSource;
 
 use Neos\Neos\Service\DataSource\AbstractDataSource;
 use Neos\ContentRepository\Domain\Model\NodeInterface;
@@ -29,14 +29,14 @@ class TagsDataSource extends AbstractDataSource {
 
         $tags = array();
 
-        if ($node->getParent()->getNodeType()->getName() == 'PHLU.Corporate:Page.View.Default.Default') {
+        if ($node->getParent()->getNodeType()->getName() == 'Phlu.Corporate:Page.View.Default.Default') {
             $flowQuery = new FlowQuery(array($node->getParent()->getParent()));
         } else {
             $flowQuery = new FlowQuery(array($node->getParent()));
         }
 
 
-        $nodes = $flowQuery->find("[instanceof PHLU.Neos.NodeTypes:Tag]")->get();
+        $nodes = $flowQuery->find("[instanceof Phlu.Neos.NodeTypes:Tag]")->get();
 
         foreach ($nodes as $tag) {
 

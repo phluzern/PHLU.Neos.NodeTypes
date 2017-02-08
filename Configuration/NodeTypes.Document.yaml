@@ -1,5 +1,5 @@
 
-'PHLU.Neos.NodeTypes:Page':
+'Phlu.Neos.NodeTypes:Page':
   superTypes:
     'Neos.NodeTypes:Page': true
   abstract: true

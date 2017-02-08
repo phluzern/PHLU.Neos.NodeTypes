@@ -1,5 +1,5 @@
 <?php
-namespace PHLU\Neos\NodeTypes\ViewHelpers;
+namespace Phlu\Neos\NodeTypes\ViewHelpers;
 
 /*
  * This file is part of the Neos.Neos package.
@@ -13,7 +13,7 @@ namespace PHLU\Neos\NodeTypes\ViewHelpers;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper;
-use PHLU\Neos\NodeTypes\DataSource\TagsDataSource;
+use Phlu\Neos\NodeTypes\DataSource\TagsDataSource;
 use Neos\ContentRepository\Domain\Model\Node;
 
 /**

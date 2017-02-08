@@ -1,10 +1,10 @@
 
-'PHLU.Neos.NodeTypes:Page':
+'Phlu.Neos.NodeTypes:Page':
   childNodes:
     database:
-      type: 'PHLU.Neos.NodeTypes:DatabaseCollection'
+      type: 'Phlu.Neos.NodeTypes:DatabaseCollection'
       position: end
-'PHLU.Neos.NodeTypes:Database':
+'Phlu.Neos.NodeTypes:Database':
   superTypes:
     'Neos.Neos:Content': true
   ui:
@@ -13,13 +13,13 @@
   properties:
     title:
       defaultValue: Datenbank
-'PHLU.Neos.NodeTypes:DatabaseCollection':
+'Phlu.Neos.NodeTypes:DatabaseCollection':
   superTypes:
     'Neos.Neos:Node': true
   constraints:
     nodeTypes:
       '*': false
-      'PHLU.Neos.NodeTypes:Database': true
+      'Phlu.Neos.NodeTypes:Database': true
   ui:
     label: Datenbank
     icon: icon-database
