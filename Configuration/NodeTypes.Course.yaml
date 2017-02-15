@@ -7,7 +7,7 @@
   superTypes:
     'Phlu.Neos.NodeTypes:Database': true
   ui:
-    label: Kurs
+    label: 'Kurs'
   properties:
     deleted:
       type: boolean
@@ -18,7 +18,7 @@
     description:
       type: string
       ui:
-        label: Beschreibung
+        label: 'Beschreibung'
     ects:
       type: integer
       ui:
@@ -26,29 +26,34 @@
     fee:
       type: float
       ui:
-        label: Kosten
+        label: 'Kosten'
     id:
       type: integer
     leaders:
       type: array
       ui:
-        label: Leitung
+        label: 'Leitung'
     targetgroups:
       type: array
       ui:
-        label: Zielgruppen
+        label: 'Zielgruppen'
 'Phlu.Neos.NodeTypes:Course.Study':
   abstract: true
   superTypes:
     'Phlu.Neos.NodeTypes:Database': true
     'Phlu.Neos.NodeTypes:Course': true
   ui:
-    label: Studiengang
+    label: 'Studiengang'
   properties:
     graduation:
       type: string
       ui:
-        label: Abschluss
+        label: 'Abschluss'
+    years:
+      type: array
+      ui:
+        label: 'Jahrgänge'
+        keywords: 'start wann anmeldung'
 'Phlu.Neos.NodeTypes:Course.Module':
   abstract: true
   superTypes:
