@@ -53,7 +53,7 @@
         label: 'Start'
         keywords: 'datum wann'
     isinstock:
-      type: Boolean
+      type: boolean
       ui:
         label: 'Freie Plätze'
 
