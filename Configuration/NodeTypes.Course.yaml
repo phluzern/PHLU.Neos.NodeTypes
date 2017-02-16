@@ -37,6 +37,26 @@
       type: array
       ui:
         label: 'Zielgruppen'
+    years:
+      type: array
+      ui:
+        label: 'Jahrgänge'
+        keywords: 'start wann anmeldung'
+    genre:
+      type: array
+      ui:
+        label: 'Rubrik'
+        keywords: 'inhalt'
+    start:
+      type: DateTime
+      ui:
+        label: 'Start'
+        keywords: 'datum wann'
+    isinstock:
+      type: Boolean
+      ui:
+        label: 'Freie Plätze'
+
 'Phlu.Neos.NodeTypes:Course.Study':
   abstract: true
   superTypes:
@@ -49,11 +69,6 @@
       type: string
       ui:
         label: 'Abschluss'
-    years:
-      type: array
-      ui:
-        label: 'Jahrgänge'
-        keywords: 'start wann anmeldung'
 'Phlu.Neos.NodeTypes:Course.Module':
   abstract: true
   superTypes:
