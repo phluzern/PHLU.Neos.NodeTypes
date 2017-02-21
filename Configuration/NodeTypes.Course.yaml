@@ -76,11 +76,13 @@
     'Phlu.Neos.NodeTypes:Course': true
   ui:
     label: Modul
+
 'Phlu.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
     'Phlu.Neos.NodeTypes:Course.Study': true
   ui:
     label: 'Weiterbildung Studiengang'
+
 'Phlu.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
     'Phlu.Neos.NodeTypes:Course.Module': true
