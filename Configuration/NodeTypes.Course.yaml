@@ -69,6 +69,7 @@
       type: string
       ui:
         label: 'Abschluss'
+
 'Phlu.Neos.NodeTypes:Course.Module':
   abstract: true
   superTypes:
