@@ -56,6 +56,10 @@
       type: boolean
       ui:
         label: 'Freie Plätze'
+    sections:
+      type: array
+      ui:
+        label: 'Abschnitte'
 
 'Phlu.Neos.NodeTypes:Course.Study':
   abstract: true
