@@ -29,6 +29,7 @@
         label: 'Kosten'
     id:
       type: integer
+      defaultValue: 0
     leaders:
       type: array
       ui:
@@ -60,6 +61,10 @@
       type: array
       ui:
         label: 'Abschnitte'
+    lessons:
+      type: array
+      ui:
+        label: 'Lektionen'
 
 'Phlu.Neos.NodeTypes:Course.Study':
   abstract: true
