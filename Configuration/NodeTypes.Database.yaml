@@ -4,15 +4,17 @@
     database:
       type: 'Phlu.Neos.NodeTypes:DatabaseCollection'
       position: end
+
+
 'Phlu.Neos.NodeTypes:Database':
-  superTypes:
-    'Neos.Neos:Content': true
   ui:
     label: Datenbank
     icon: icon-database
   properties:
     title:
       defaultValue: Datenbank
+
+
 'Phlu.Neos.NodeTypes:DatabaseCollection':
   superTypes:
     'Neos.Neos:Node': true
