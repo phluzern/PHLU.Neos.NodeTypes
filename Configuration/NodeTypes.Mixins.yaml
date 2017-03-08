@@ -154,7 +154,7 @@
     ou:
       type: array
       ui:
-        label: 'Zentrum, Institut oder Organisation'
+        label: 'Fächer, Zentrum, Institut, Organisation'
         reloadIfChanged: FALSE
         reloadPageIfChanged: FALSE
         inspector:
