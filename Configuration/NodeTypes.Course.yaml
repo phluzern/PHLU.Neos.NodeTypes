@@ -78,6 +78,11 @@
       type: string
       ui:
         label: 'Abschluss'
+  childNodes:
+    overview:
+      type: 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview'
+
+
 
 'Phlu.Neos.NodeTypes:Course.Module':
   abstract: true
@@ -86,6 +91,9 @@
     'Phlu.Neos.NodeTypes:Course': true
   ui:
     label: Modul
+  childNodes:
+    overview:
+      type: 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview'
 
 'Phlu.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
@@ -98,3 +106,24 @@
     'Phlu.Neos.NodeTypes:Course.Module': true
   ui:
     label: 'Weiterbildung Kurs'
+
+
+'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview':
+  superTypes:
+    'Phlu.Corporate:ContentCollection': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Phlu.Neos.NodeTypes:Course.Overview.Item': true
+
+'Phlu.Neos.NodeTypes:Course.Overview.Item':
+  superTypes:
+    'Phlu.Neos.NodeTypes:TextPlain': true
+  ui:
+    label: 'Manueller Übersichts-Eintrag'
+  properties:
+    title:
+      type: string
+      defaultValue: 'Titel'
+    text:
+      defaultValue: 'Wert'
