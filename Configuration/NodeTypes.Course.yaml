@@ -61,6 +61,18 @@
       type: boolean
       ui:
         label: 'Freie Plätze'
+    IsEmpfohlen:
+      type: boolean
+      ui:
+        label: 'Empfohlen'
+    IsLastMinute:
+      type: boolean
+      ui:
+        label: 'Lastminute'
+    IsNeuste:
+      type: boolean
+      ui:
+        label: 'Neu'
     sections:
       type: array
       ui:
