@@ -61,15 +61,15 @@
       type: boolean
       ui:
         label: 'Freie Plätze'
-    IsEmpfohlen:
+    isEmpfohlen:
       type: boolean
       ui:
         label: 'Empfohlen'
-    IsLastMinute:
+    isLastMinute:
       type: boolean
       ui:
         label: 'Lastminute'
-    IsNeuste:
+    isNeuste:
       type: boolean
       ui:
         label: 'Neu'
