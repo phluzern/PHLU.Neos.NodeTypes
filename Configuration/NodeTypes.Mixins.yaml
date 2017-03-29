@@ -15,7 +15,7 @@
         label: 'Headline'
         inspector:
           group: 'teaser'
-          position: 50
+          position: 10
         aloha:
           'format': # Enable specific formatting options.
             'strong': FALSE
@@ -60,7 +60,7 @@
         label: 'Text'
         inspector:
           group: 'teaser'
-          position: 50
+          position: 20
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             rows: 7
@@ -106,7 +106,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'teaser'
-          position: 50
+          position: 100
           editorOptions:
             features:
               crop: TRUE
