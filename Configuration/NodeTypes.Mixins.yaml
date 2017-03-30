@@ -11,7 +11,7 @@
       defaultValue: 'Enter headline here'
       ui:
         inlineEditable: TRUE
-        reloadIfChanged: FALSE
+        reloadIfChanged: TRUE
         label: 'Headline'
         inspector:
           group: 'teaser'
