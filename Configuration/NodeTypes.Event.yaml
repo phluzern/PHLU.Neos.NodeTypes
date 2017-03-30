@@ -7,7 +7,7 @@
   abstract: true
   ui:
     label: Veranstaltung
-    icon: icon-picture
+    icon: icon-calendar
     position: 300
     inspector:
       groups:
@@ -46,6 +46,18 @@
         inspector:
           group: event
           position: 50
+  childNodes:
+    main:
+      type: 'Phlu.Neos.NodeTypes:ContentCollection.Event'
+
+'Phlu.Neos.NodeTypes:ContentCollection.Event':
+  superTypes:
+    'Phlu.Neos.NodeTypes:ContentCollection': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Phlu.Qmpilot.NodeTypes:File': true
+
 'Phlu.Neos.NodeTypes:ContentCollection.Events':
   superTypes:
     'Phlu.Neos.NodeTypes:ContentCollection': true
@@ -53,13 +65,14 @@
     nodeTypes:
       '*': false
       'Phlu.Neos.NodeTypes:Event': true
+
 'Phlu.Neos.NodeTypes:Events':
   superTypes:
     'Phlu.Neos.NodeTypes:Content': true
   abstract: true
   ui:
     label: 'Veranstaltungen (Sammlung)'
-    icon: icon-picture
+    icon: icon-calendar
     position: 300
     inspector:
       groups:

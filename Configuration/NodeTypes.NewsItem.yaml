@@ -7,7 +7,7 @@
   abstract: true
   ui:
     label: News
-    icon: icon-picture
+    icon: icon-news
     position: 300
     inspector:
       groups:
