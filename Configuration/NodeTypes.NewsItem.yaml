@@ -8,7 +8,7 @@
   ui:
     label: News
     icon: icon-news
-    position: 300
+    position: 299
     inspector:
       groups:
         news:

@@ -14,26 +14,50 @@
         event:
           label: Veranstaltung
   properties:
-    date:
+    teaserImage:
+      ui: ~
+    fromDate:
       type: DateTime
       ui:
         inlineEditable: false
         reloadIfChanged: true
-        label: Datum
+        label: Datum von
+        inspector:
+          group: event
+          position: 48
+          editorOptions:
+            format: d.m.Y
+    fromTime:
+      type: DateTime
+      ui:
+        inlineEditable: false
+        reloadIfChanged: true
+        label: Uhrzeit von
+        inspector:
+          group: event
+          position: 49
+          editorOptions:
+            format: 'h:i'
+    toDate:
+      type: DateTime
+      ui:
+        inlineEditable: false
+        reloadIfChanged: true
+        label: Datum bis
         inspector:
           group: event
           position: 50
           editorOptions:
             format: d.m.Y
-    time:
+    toTime:
       type: DateTime
       ui:
         inlineEditable: false
         reloadIfChanged: true
-        label: Zeit
+        label: Uhrzeit bis
         inspector:
           group: event
-          position: 50
+          position: 51
           editorOptions:
             format: 'h:i'
     location:
@@ -45,7 +69,25 @@
         label: Ort
         inspector:
           group: event
-          position: 50
+          position: 52
+    eventType:
+      type: string
+      defaultValue: isEvent
+      ui:
+        label: 'Art der Veranstaltung'
+        reloadIfChanged: true
+        inspector:
+          group: event
+          position: 53
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              isEvent:
+                label: 'Veranstaltung'
+              isExhibition:
+                label: 'Ausstellung'
+              isMeeting:
+                label: 'Tagung'
   childNodes:
     main:
       type: 'Phlu.Neos.NodeTypes:ContentCollection.Event'
