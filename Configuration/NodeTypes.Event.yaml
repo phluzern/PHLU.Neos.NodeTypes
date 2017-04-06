@@ -1,14 +1,23 @@
 # Teaser mixin
 
+
 'Phlu.Neos.NodeTypes:Event':
   superTypes:
     'Phlu.Neos.NodeTypes:Content': true
     'Phlu.Neos.NodeTypes:TeaserMixin': true
+    'Phlu.Neos.NodeTypes:EventMixin': true
   abstract: true
   ui:
     label: Veranstaltung
     icon: icon-calendar
     position: 300
+  childNodes:
+    main:
+      type: 'Phlu.Neos.NodeTypes:ContentCollection.Event'
+
+
+'Phlu.Neos.NodeTypes:EventMixin':
+  ui:
     inspector:
       groups:
         event:
@@ -88,9 +97,6 @@
                 label: 'Ausstellung'
               isMeeting:
                 label: 'Tagung'
-  childNodes:
-    main:
-      type: 'Phlu.Neos.NodeTypes:ContentCollection.Event'
 
 'Phlu.Neos.NodeTypes:ContentCollection.Event':
   superTypes:
