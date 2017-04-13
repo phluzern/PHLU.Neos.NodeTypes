@@ -24,6 +24,7 @@ class ContentElementWrappingServiceAspect
 
         $content = $joinPoint->getAdviceChain()->proceed($joinPoint);
 
+
         $firstTagEndingPos = strpos($content,">",0)+1;
         $firstTagBefore = substr($content,0,$firstTagEndingPos);
         $firstTagAfter = substr($content,$firstTagEndingPos);
