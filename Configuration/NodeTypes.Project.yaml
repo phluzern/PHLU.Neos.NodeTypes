@@ -2,6 +2,7 @@
 'Phlu.Neos.NodeTypes:Project':
   superTypes:
     'Phlu.Neos.NodeTypes:Database': true
+    'Phlu.Neos.NodeTypes:TextPlain': true
   hybridsearch:
     properties:
       url: neosliveHybridsearchProjectUrl
@@ -14,9 +15,9 @@
         project:
           label: Project
   properties:
-    projectType:
-      type: string
     title:
+      type: string
+    projectType:
       type: string
     id:
       type: integer
