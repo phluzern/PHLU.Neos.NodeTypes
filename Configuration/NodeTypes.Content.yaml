@@ -35,4 +35,4 @@
     icon: icon-file-text
   properties:
     text:
-      defaultValue: 'Text eingeben'
+      defaultValue: 'Lead-Text eingeben, der die wichtigsten Informationen in max. 300 Zeichen zusammenfasst.'
