@@ -4,6 +4,7 @@
   hybridsearch:
     properties:
       url: neosliveHybridsearchCourseUrl
+      detailpage: neosliveHybridsearchDetailPage
   superTypes:
     'Phlu.Neos.NodeTypes:Database': true
   ui:
