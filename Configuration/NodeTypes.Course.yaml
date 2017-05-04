@@ -112,17 +112,41 @@
     overview:
       type: 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview'
 
+
+'Phlu.Neos.NodeTypes:Course.Event':
+  abstract: true
+  superTypes:
+    'Phlu.Neos.NodeTypes:Database': true
+    'Phlu.Neos.NodeTypes:Course': true
+  ui:
+    label: Veranstaltung
+  childNodes:
+    overview:
+      type: 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview'
+
+
+
 'Phlu.Neos.NodeTypes:Course.Study.FurtherEducation':
   superTypes:
     'Phlu.Neos.NodeTypes:Course.Study': true
   ui:
     label: 'Weiterbildung Studiengang'
 
+
 'Phlu.Neos.NodeTypes:Course.Module.FurtherEducation':
   superTypes:
     'Phlu.Neos.NodeTypes:Course.Module': true
   ui:
     label: 'Weiterbildung Kurs'
+
+
+'Phlu.Neos.NodeTypes:Course.Event.FurtherEducation':
+  superTypes:
+    'Phlu.Neos.NodeTypes:Course.Event': true
+  ui:
+    label: 'Weiterbildung Veranstaltung'
+
+
 
 
 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview':
