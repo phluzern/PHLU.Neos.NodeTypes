@@ -17,6 +17,10 @@
         label: Id
         inspector:
           group: publication
+    Sortingkey:
+      type: string
+      ui:
+        label: 'Sorting key'
     Citationstyle:
       type: string
       ui:
