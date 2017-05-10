@@ -1,4 +1,3 @@
-
 'Phlu.Neos.NodeTypes:Page':
   superTypes:
     'Neos.NodeTypes:Page': true
@@ -6,3 +5,11 @@
   constraints:
     nodeTypes:
       'Neos.NodeTypes:Page': false
+  properties:
+    _nodeType:
+      ui:
+        inspector:
+          group: '_type'
+  postprocessors:
+    'AdminNodeTypeUiPostprocessor':
+      postprocessor: 'Phlu\Neos\NodeTypes\NodeTypePostprocessor\AdminNodeTypeUiPostprocessor'
