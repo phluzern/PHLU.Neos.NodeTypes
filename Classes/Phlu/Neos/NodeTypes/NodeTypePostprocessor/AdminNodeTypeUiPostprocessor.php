@@ -50,10 +50,9 @@ class AdminNodeTypeUiPostprocessor implements NodeTypePostprocessorInterface
 
         if ($this->securityContext->canBeInitialized()) {
             if ($this->securityContext->hasRole('Neos.Neos:Administrator')) {
-                $coniguration['properties']['_nodeType']['ui']['inspector']['group'] = 'type';
+                $configuration['properties']['_nodeType']['ui']['inspector']['group'] = 'type';
             }
         }
-
 
     }
 }
