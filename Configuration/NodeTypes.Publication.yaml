@@ -11,6 +11,8 @@
         publication:
           label: Publication
   properties:
+    title:
+      type: string
     Id:
       type: integer
       ui:
