@@ -11,10 +11,6 @@
         publication:
           label: Publication
   properties:
-    title:
-      type: string
-    text:
-      type: string
     Id:
       type: integer
       ui:
