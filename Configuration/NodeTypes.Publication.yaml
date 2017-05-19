@@ -10,8 +10,10 @@
       groups:
         publication:
           label: Publication
-  label: ${q(node).property('Citationstyle')}
+  label: ${q(node).property('title')+ ' ' + q(node).property('Citationstyle')}
   properties:
+    Title:
+      type: string
     Id:
       type: integer
       ui:
