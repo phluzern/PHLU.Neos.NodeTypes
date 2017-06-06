@@ -1,0 +1,24 @@
+'Phlu.Neos.NodeTypes:Shorturl':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        shorturl:
+          label: 'Alias'
+          position: 90000
+  properties:
+    phluNeosNodeTypesShorturl:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Kurz-Url'
+        reloadIfChanged: TRUE
+        reloadPageIfChanged: FALSE
+        inspector:
+          group: shorturl
+          editorListeners:
+            phluNeosNodeTypesShorturl:
+              property: 'phluNeosNodeTypesShorturl'
+              handler: Phlu.Neos.NodeTypes/Handlers/ShorturlHandler
+      validation:
+        'Neos.Neos/Validation/AlphanumericValidator': TRUE

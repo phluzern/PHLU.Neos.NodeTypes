@@ -6,6 +6,8 @@ Neos:
         autoInclude:
           Phlu.Neos.NodeTypes:
             - 'NodeTypes/*'
+      requireJsPathMapping:
+        Phlu.Neos.NodeTypes/Handlers: 'resource://Phlu.Neos.NodeTypes/Public/JavaScript/Backend/Inspector/Handlers'
     fusion:
       autoInclude:
         Phlu.Neos.NodeTypes: true
