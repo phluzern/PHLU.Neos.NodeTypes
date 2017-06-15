@@ -14,6 +14,7 @@
   constraints:
     nodeTypes:
       'Phlu.Neos.NodeTypes:Content': false
+
 'Phlu.Neos.NodeTypes:Headline':
   superTypes:
     'Phlu.Neos.NodeTypes:Content': true
@@ -25,6 +26,7 @@
   properties:
     text:
       defaultValue: 'Titel eingeben'
+
 'Phlu.Neos.NodeTypes:TextPlain':
   abstract: true
   superTypes:
