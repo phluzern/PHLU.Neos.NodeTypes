@@ -14,7 +14,9 @@
   childNodes:
     main:
       type: 'Phlu.Neos.NodeTypes:ContentCollection.Event'
-
+  properties:
+    reference:
+      type: reference
 
 'Phlu.Neos.NodeTypes:EventMixin':
   ui:

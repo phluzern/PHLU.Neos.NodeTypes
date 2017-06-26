@@ -30,3 +30,6 @@
           position: 50
           editorOptions:
             format: d.m.Y
+    properties:
+      reference:
+        type: reference
