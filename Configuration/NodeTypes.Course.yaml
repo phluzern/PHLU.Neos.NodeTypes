@@ -1,5 +1,6 @@
 
 'Phlu.Neos.NodeTypes:Course':
+  label: ${q(node).property('nr') + ' ' + q(node).property('title')}
   abstract: true
   hybridsearch:
     properties:
