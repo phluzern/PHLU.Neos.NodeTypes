@@ -66,7 +66,7 @@ class NeosServiceNodesAspect
 
                 $nodes = $this->nodeDataRepository->findByProperties($shorturl, 'Phlu.Neos.NodeTypes:Shorturl', $object->getWorkspace(), $object->getDimensions());
                 foreach ($nodes as $node) {
-                    if ($node->hasProperty('phluNeosNodeTypesShorturl') && $node->getProperty('phluNeosNodeTypesShorturl') == $shorturl) {
+                    if ($object->getIdentifier() !== $node->getIdentifier() && $node->hasProperty('phluNeosNodeTypesShorturl') && $node->getProperty('phluNeosNodeTypesShorturl') == $shorturl) {
                         $object->setProperty('phluNeosNodeTypesShorturl',time().'-'.$shorturl);
                         return null;
                     }
