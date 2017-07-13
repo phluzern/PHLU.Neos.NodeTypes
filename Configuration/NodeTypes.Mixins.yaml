@@ -56,7 +56,7 @@
       defaultValue: ''
       ui:
         inlineEditable: TRUE
-        reloadIfChanged: FALSE
+        reloadIfChanged: TRUE
         label: 'Text'
         inspector:
           group: 'teaser'
