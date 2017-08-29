@@ -22,5 +22,5 @@
               handler: Phlu.Neos.NodeTypes/Handlers/ShorturlHandler
       validation:
         'Neos.Neos/Validation/RegularExpressionValidator':
-          regularExpression: /^([\w-\/])*$/g
+          regularExpression: /^([\w-\/\+])*$/g
 
