@@ -29,6 +29,10 @@
       type: float
       ui:
         label: 'Kosten'
+    subsidizedFee:
+      type: float
+      ui:
+        label: 'Subventionierte Kosten'
     id:
       type: integer
       defaultValue: 0
