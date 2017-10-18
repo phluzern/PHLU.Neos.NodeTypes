@@ -79,6 +79,8 @@
       type: boolean
       ui:
         label: 'Neu'
+    isRequestable:
+      type: boolean
     sections:
       type: array
       ui:
