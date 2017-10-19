@@ -81,6 +81,8 @@
         label: 'Neu'
     isRequestable:
       type: boolean
+    statusDescription:
+      type: string
     sections:
       type: array
       ui:
