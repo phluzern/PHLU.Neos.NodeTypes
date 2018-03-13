@@ -120,7 +120,11 @@
   childNodes:
     overview:
       type: 'Phlu.Neos.NodeTypes:Course.ContentCollection.Overview'
-
+  properties:
+    region:
+      type: string
+      ui:
+        label: 'Region'
 
 'Phlu.Neos.NodeTypes:Course.Event':
   abstract: true
