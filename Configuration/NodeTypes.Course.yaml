@@ -25,6 +25,10 @@
       type: integer
       ui:
         label: 'ECTS Punkte'
+    duration:
+      type: float
+      ui:
+        label: 'Kursdauer'
     fee:
       type: float
       ui:
@@ -85,6 +89,10 @@
         label: 'Neu'
     isRequestable:
       type: boolean
+    holKursComment:
+      type: string
+      ui:
+        label: 'Bemerkung'
     statusDescription:
       type: string
     sections:
