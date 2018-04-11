@@ -33,6 +33,10 @@
       type: float
       ui:
         label: 'Subventionierte Kosten'
+    materialCosts:
+      type: string
+      ui:
+        label: 'Materialkosten'
     id:
       type: integer
       defaultValue: 0
