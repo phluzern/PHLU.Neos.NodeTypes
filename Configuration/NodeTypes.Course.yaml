@@ -93,6 +93,10 @@
       type: string
       ui:
         label: 'Bemerkung'
+    holKursAnmeldeLink:
+      type: string
+      ui:
+        label: 'Holkurs Anmeldelink'
     statusDescription:
       type: string
     sections:
